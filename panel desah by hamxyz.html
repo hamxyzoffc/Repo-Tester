@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Private Server Hamxyz</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #2f3e46;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-box {
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      width: 400px;
+      text-align: center;
+    }
+
+    .login-box h2 {
+      margin-bottom: 20px;
+    }
+
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    .login-box button {
+      background: #4a90e2;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .login-box .forgot {
+      margin-top: 10px;
+      display: block;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .mascot {
+      width: 100px;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      text-align: center;
+      color: #999;
+      font-size: 12px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-box">
+    <img src="https://img1.pixhost.to/images/5507/595073010_hamxyzofficial.jpg" class="mascot" alt="Logo">
+    <h2>Login to Continue</h2>
+    <input type="text" placeholder="Username or Email" id="username">
+    <input type="password" placeholder="Password" id="password">
+    <button onclick="playPrank()">LOGIN</button>
+    <a class="forgot">Forgot Password?</a>
+    <footer>&copy; 2015 - 2025 Pterodactyl Software</footer>
+  </div>
+
+  <!-- audio tag -->
+  <audio id="prank-audio">
+    <source src="https://files.catbox.moe/ib5zd1.mp4" type="audio/mpeg">
+    browser lo ga support audio
+  </audio>
+
+  <script>
+    function playPrank() {
+      document.getElementById("prank-audio").play();
+    }
+  </script>
+</body>
+</html>
